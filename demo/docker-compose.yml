@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: simple_crm
+    environment:
+      POSTGRES_USER: crm
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: simple_crm
+    ports:
+      - "5432:5432"
